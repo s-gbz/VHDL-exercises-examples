@@ -1,0 +1,48 @@
+$date
+  Sat Aug 22 14:36:51 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module einsaus5dekoder_tb $end
+$var reg 3 ! ein[2:0] $end
+$var reg 5 " aus[4:0] $end
+$scope module eins_aus5 $end
+$var reg 3 # ein[2:0] $end
+$var reg 5 $ aus[4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b000 !
+b00001 "
+b000 #
+b00001 $
+#1000000
+b001 !
+b00010 "
+b001 #
+b00010 $
+#2000000
+b010 !
+b00100 "
+b010 #
+b00100 $
+#3000000
+b011 !
+b01000 "
+b011 #
+b01000 $
+#4000000
+b100 !
+b10000 "
+b100 #
+b10000 $
+#5000000

@@ -1,0 +1,62 @@
+$date
+  Fri Aug 21 16:47:45 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module ha_tb $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # o $end
+$var reg 1 $ c $end
+$scope module half_adder $end
+$var reg 1 % a $end
+$var reg 1 & b $end
+$var reg 1 ' o $end
+$var reg 1 ( c $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+X!
+X"
+X#
+X$
+X%
+X&
+X'
+X(
+#1000000
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+#2000000
+1"
+1#
+1&
+1'
+#3000000
+1!
+0"
+1%
+0&
+#4000000
+1"
+0#
+1$
+1&
+0'
+1(
+#5000000

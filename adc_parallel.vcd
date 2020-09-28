@@ -1,0 +1,56 @@
+$date
+  Sat Aug 22 15:21:32 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module adc_parallel_test $end
+$var reg 7 ! inputvoltage[6:0] $end
+$var reg 3 " outputvoltage[2:0] $end
+$scope module adc_parallel_pr $end
+$var reg 7 # inputvoltage[6:0] $end
+$var reg 3 $ outputvoltage[2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000000 !
+bUUU "
+b0000000 #
+b000 $
+#1000000
+b0000001 !
+b0000001 #
+b001 $
+#2000000
+b0000011 !
+b0000011 #
+b010 $
+#3000000
+b0000111 !
+b0000111 #
+b011 $
+#4000000
+b0001111 !
+b0001111 #
+b100 $
+#5000000
+b0011111 !
+b0011111 #
+b101 $
+#6000000
+b0111111 !
+b0111111 #
+b110 $
+#7000000
+b1111111 !
+b1111111 #
+b111 $
+#8000000

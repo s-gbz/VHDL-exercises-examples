@@ -1,0 +1,63 @@
+$date
+  Sat Aug 22 15:14:56 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module priodecoder_tb $end
+$var reg 7 ! ein[6:0] $end
+$var reg 3 " aus[2:0] $end
+$scope module prio_decoder $end
+$var reg 7 # ein[6:0] $end
+$var reg 3 $ aus[2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000000 !
+b000 "
+b0000000 #
+b000 $
+#1000000
+b0000001 !
+b001 "
+b0000001 #
+b001 $
+#2000000
+b0000011 !
+b010 "
+b0000011 #
+b010 $
+#3000000
+b0000111 !
+b011 "
+b0000111 #
+b011 $
+#4000000
+b0001111 !
+b100 "
+b0001111 #
+b100 $
+#5000000
+b0011111 !
+b101 "
+b0011111 #
+b101 $
+#6000000
+b0111111 !
+b110 "
+b0111111 #
+b110 $
+#7000000
+b1111111 !
+b111 "
+b1111111 #
+b111 $
+#8000000

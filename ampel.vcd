@@ -1,0 +1,37 @@
+$date
+  Sun Aug 23 14:48:48 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module ampel $end
+$var reg 1 ! clk $end
+$var reg 1 " nreset $end
+$var reg 1 # rot_haupt $end
+$var reg 1 $ gelb_haupt $end
+$var reg 1 % gruen_haupt $end
+$var reg 1 & rot_neben $end
+$var reg 1 ' gelb_neben $end
+$var reg 1 ( gruen_neben $end
+$var reg 4 ) counter[3:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+U!
+U"
+1#
+0$
+U%
+U&
+U'
+U(
+b0000 )
