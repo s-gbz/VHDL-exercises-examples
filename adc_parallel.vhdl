@@ -1,5 +1,3 @@
--- Aufgabe 1: Prioritaetsdecoder
--- Decoder entsprechend der Tabelle beim ADU
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 

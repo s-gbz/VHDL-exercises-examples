@@ -2,24 +2,24 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-ENTITY ampel IS PORT (
+ENTITY trafic_light IS PORT (
     clk, r_neg : IN std_logic; -- r_neg = reset nicht
     gruen_h, rot_h, gelb_h, gruen_n, rot_n, gelb_n : OUT std_logic);
-END ampel;
+END trafic_light;
 
-ARCHITECTURE verhalten OF ampel IS -- Architektur mit 2 Prozessen
-    SIGNAL zaehl : unsigned(3 DOWNTO 0); -- interner Zaehler
+ARCHITECTURE behave OF trafic_light IS -- Architektur mit 2 Prozessen
+    SIGNAL zaehl : unsigned(3 DOWNTO 0); -- interner counter
 BEGIN
-    zaehler : PROCESS (r_neg, clk) -- Prozess zur Modellierung des Zaehlers
+    counter : PROCESS (r_neg, clk) -- Prozess zur Modellierung des counters
     BEGIN
         IF r_neg = '0' THEN
             zaehl <= "0000"; -- asynchroner Reset
         ELSIF (clk'event AND clk = '1') THEN
             zaehl <= zaehl + 1;
         END IF;
-    END PROCESS zaehler;
+    END PROCESS counter;
 
-    ausgabe : PROCESS (zaehl) -- Prozess fuer die Ausgabe
+    output : PROCESS (zaehl) -- Prozess fuer die output
     BEGIN
         IF (zaehl < "0111") THEN
             gruen_h <= '1';
@@ -78,5 +78,5 @@ BEGIN
             rot_n <= '1';
             gelb_n <= '0';
         END IF;
-    END PROCESS ausgabe;
-END verhalten;
+    END PROCESS output;
+END behave;
